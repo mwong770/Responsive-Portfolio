@@ -62,7 +62,6 @@ h2, h3 {
 header {
 	margin: 0 auto;
 	width: 960px;
-	/*width: 67%;*/
 }
 
 h2 {
@@ -102,15 +101,15 @@ nav > a {
 
 #middle {
 	overflow: auto;
-	width: 100%; /******/
-	max-width: 960px;/*****/
+	width: 100%;
+	max-width: 960px;/*why media queries don't work unless this is set to max but others not max*/
 	margin: 0 auto;
 }
 
 article, form, #portfolio {
 	float: left;
-	width: 100%;/*****/
-	max-width: 650px;/****/
+	/*width: 100%;/**if make this one width 100% and/or max-width 650 768 stops working***/
+	width: 650px;/****/
 	background-color: #ffffff;
 	margin: 0 20px 40px 20px;
 	border: solid 1px #dddddd;
@@ -319,6 +318,109 @@ footer {
 	width: 100%;
 }
 
+
+@media screen and (max-width: 980px) {
+
+	header {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	h1 {
+		color: blue;
+		font: 30px;
+		margin: 0;
+	}
+
+	h2 {
+		font: 28pc;
+	}
+
+	h3 {
+		font: 19px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	header {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	h1 {
+		color: orange;
+		font: 28px;
+		margin: 0;
+	}
+
+	h2 {
+		font: 26px;
+	}
+
+	h3 {
+		font: 18px;
+	}
+
+	#maria {
+		width: 50%;
+		height: 50%; /*difference between 50% or auto*/
+		margin-bottom: 20px;
+	}
+
+	article, form, #portfolio {
+		float: none;
+		margin: 0 auto 25px auto;
+		width: 90%;
+	}
+
+	.projects {
+		width: 45%;
+		/*height: auto;
+		height: 70%;*/
+		height: 100%;
+		/*padding:0;*/
+	}
+
+	/*#project1, #project2, #project3, #project4, #project5 {
+		width: 45%
+		height: 45%;
+	}*/
+
+	.projects:nth-child (even) {
+		margin: 0;
+		padding: 0;
+		float: left;
+	}
+
+	.projects:nth-child (odd) {
+		float: right;
+		margin: 0;
+	}
+
+	.projects > span {
+		bottom: 10px;
+	}
+
+	aside {
+		margin: 0 auto 25px auto;
+		width: 90%;
+		float: none;
+		overflow: auto; /*why***************/
+	}
+
+	/*extends bottom border of h3*/
+	h3 {
+		width: 100%;
+		font-size: 17px;
+	}
+
+}
+
+
+
+
 @media screen and (max-width: 640px) {
 
 	h1 {
@@ -396,7 +498,7 @@ footer {
 	/*extends bottom border of h3*/
 	h3 {
 		width: 100%;
-		font-size: 20px;
+		font-size: 17px;
 	}
 
 	.projects {
