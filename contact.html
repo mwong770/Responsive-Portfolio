@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Maria Wong's Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+	<div id="top">
+
+		<header>
+			<a href="index.html"><h1>Maria Wong</h1></a>
+			<nav id="pages">
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</header>
+
+	</div>
+
+	<div id="middle">
+		
+		<!--method post sends data as http post transaction. Otherwise, appends data to url-->
+		<form action="mailto:mwong770@yahoo.com" method="post" enctype="text/plain">
+			<h2>Contact</h2>
+			<div class="maincontent" id="formcontent">
+				<label> 
+					Name
+				</label> <!--Only label goes in label; input goes on outside-->
+				<!--autofocus selects the element the browser will focus on when the form is displayed-->
+				<!--required ensures the user provides a value-->
+				<input required autofocus type="text" name="name" placeholder="John Smith">
+				<label>
+					Email   <!--name attribute used to reference elements in js-->
+				</label>
+				<!--type email ensures the user provides a value with @ -->
+				<input required type="email" name="email" placeholder="example@gmail.com">
+				<label>
+					Message
+				</label>
+				<textarea required name="Message"></textarea>
+				<!--can also use button element but different browsers may submit different values when 
+				button is used in an html form-->
+				<input id="button" type="submit" name="submit" value="Submit">
+			</div>
+		</form>	
+		
+		<aside>
+			<h3>Connect with Me</h3>
+			<div id="online"> 
+				<div class="iconbox" id="github">
+					<a href="https://github.com/mwong770" target="_blank"><span class="image"></span></a>
+				</div>
+				<div class="iconbox" id="linkedin">
+					 <a href="https://www.linkedin.com/in/maria-wong-116119113?trk=nav_responsive_tab_profile_pic" target="_blank"><span class="image"></span></a>
+				</div>
+				<div class="iconbox" id="stackoverflow">
+					<a href="http://stackoverflow.com/story/mwong770" target="_blank"><span class="image"></span></a>
+				</div>		
+			</div>
+		</aside>
+
+	</div>
+		
+	<footer>
+		&copy;Copyright2017 Maria Wong
+	</footer>
+	
+</body>
+
+</html>

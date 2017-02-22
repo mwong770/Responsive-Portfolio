@@ -1,0 +1,314 @@
+/*border and padding included in elements width and height
+so doesn't change when add border/padding*/
+* {
+	box-sizing: border-box; 
+}
+
+/*step 1 of 3 to make sticky footer*/
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+/*margin 85 (height of footer) is step 2 of 3 to make sticky footer*/
+body {
+	background-image: url("../images/concrete.png");
+	margin: 0 0 85px 0;
+	color: #777777;
+}
+
+body, a, #button {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h1, h2, h3, span {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+ p > a {
+	color: #4aaaa5;
+}
+
+nav > a {
+	color: #777777;
+}
+
+a:hover {
+	color: #aa4a7d;
+	font-weight: bold;
+}
+
+h1 {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	padding: 25px;
+	float: left;
+}
+
+h2, h3 {
+	color: #4aaaa5;
+}
+
+#top {
+	background-color: #ffffff;
+	overflow: auto;
+	margin-bottom: 30px;
+	border-bottom: solid #cccccc 2px;
+}
+
+/*vertically aligns main header and nav with rest of content*/
+header {
+	margin: 0 auto;
+	width: 960px;
+}
+
+h1 {
+	margin: 0 0 0 24px;
+}
+
+h2 {
+	margin-left: 24px 24px 24px 0;
+	font-size: 30px;
+}
+
+h3 {
+	border-bottom: solid #cccccc 2px;
+	padding: 0 0 20px 0;
+	text-align: left;
+	width: 175px;/*to shorten bottom border width*/
+}
+
+/*page navigation links*/
+nav > a {
+	padding: 2px;
+}
+
+#pages {
+	background-color: #ffffff;
+	float: right;
+	padding-top: 35px;
+}
+
+/*puts divider line between page navigation links*/
+#pages > a:not(:last-child) {
+	border-right: solid 1px #777777;
+}
+
+/*puts space between page navigation links.*/
+#pages > a {
+	padding: 0 13px 0 7px;
+}
+
+#middle {
+	clear: both;
+	overflow: auto;
+	width: 960px;
+	margin: 0 auto;
+}
+
+article, form, #portfolio {
+	float: left;
+	width: 650px;
+	background-color: #ffffff;
+	margin: 0 20px 40px 20px;
+	border: solid 1px #dddddd;
+	overflow: auto;
+	padding: 10px 30px 30px 30px;
+}
+
+.maincontent {
+	border-top: solid #dddddd 3px;
+	padding-top: 25px;
+}
+
+#formcontent {
+	padding-top: 10px;
+}
+
+#maria {
+	height: 200px;
+	width: 200px;
+	float: left;
+	margin-right: 25px;
+}
+
+p {
+	line-height: 2;
+}
+
+/*to remove the default inline-block display*/
+label, input, textarea {
+	display: block;
+	width: 100%;
+}
+
+input {
+	padding: 6px 0 6px 10px;
+	line-height: 1.5;
+	margin-top: 8px;
+}
+
+textarea {
+	height: 200px;
+	margin-top: 8px;
+}
+
+label, textarea {
+	padding-top: 18px;
+}
+
+#button {
+	background-color: #4aaaa5;
+	height: 40px;
+	width: 100px;
+	color: #ffffff;
+	font-size: medium;
+	padding: 6px 0;
+	margin-top: 15px;
+}
+
+#button:hover {
+	background-color: #aa4a7d;
+	color: #7daa4a;
+}
+
+/*active must come after hover to work*/
+#button:active {
+	background-image: url("../images/thanks.jpg");
+	background-color: #ffffff;
+	background-size: 75px 27px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	color: transparent;
+	border: solid 2px #4aaaa5;
+}
+
+/*placeholders box with text*/
+.projects {
+	float: left;
+	position: relative;
+	width: 275px;
+	height: 206px;
+}
+
+.projects:hover {
+	opacity: .5;
+}
+
+/*first placeholder*/
+#project1 {
+	margin: 10px 0 49px 0;
+}
+ 
+#project2 {
+	margin: 10px 0 49px 37px;
+}
+
+#project3 {
+	margin: 0 0 49px 0;
+}
+
+#project4 {
+	margin: 0 0 49px 37px;
+}
+
+#project5 {
+	margin: 0 0 25px 0;
+}
+
+/*all placeholders*/
+.holders {
+	width: 100%;
+	height: 100%;
+}
+
+/*placeholder text*/
+.projects > span {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	text-align: center;
+	font-size: 20px;
+	padding: 15px;
+}
+
+/*box holding all social links and hover text*/
+#online {
+	float: left;
+	padding-top: 5px;
+}
+
+/*box containing icon and text*/
+.iconbox {
+	position: relative;
+	width: 52px;
+	height: 52px;
+	float: left;
+	margin: 0 5px;
+	background-size: 52px 52px;
+}
+
+/*to make anchors to social links clickable*/
+.image {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#github {
+	background-image: url("../images/github.png");	
+}
+
+#linkedin {
+	background-image: url("../images/linkedin.png");
+}
+
+#stackoverflow {
+	background-image: url("../images/stackoverflow.png");	
+}
+
+#github:hover {
+	background-image: url("../images/inversegithub.png");
+	/*background-size: 52px 52px;*/
+}
+
+#linkedin:hover {
+	background-image: url("../images/inverselinkedin.png");
+	/*background-size: 52px 52px;*/
+}
+
+/*set a different size and position to match the other smaller, centered icons*/
+#stackoverflow:hover {
+	background-image: url("../images/inversestackoverflow.png");
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+aside {
+	float: left;
+	width: 270px;
+	background-color: #ffffff;
+	border: solid 1px #dddddd;
+	padding: 10px 30px 30px 40px;
+}
+
+/*position absolute/bottom 0/width 100% is step 3 of 3 to make sticky footer*/
+footer {
+	clear: both;
+	background-color: #666666;
+	height: 85px;
+	text-align: center;
+	color: #ffffff;
+	border-top: solid #4aaaa5 8px;
+	padding: 30px;
+	font-size: small;
+	position: absolute; 
+	bottom: 0;			
+	width: 100%;
+}
+
+
