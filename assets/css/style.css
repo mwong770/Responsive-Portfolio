@@ -322,7 +322,7 @@ footer {
 @media screen and (max-width: 980px) {
 
 	header {
-		width: 90%;
+		width: 700px;
 		margin: 0 auto;
 	}
 
@@ -333,16 +333,49 @@ footer {
 	}
 
 	h2 {
-		font: 28pc;
+		font: 28px;
+	}
+
+	#middle {
+		width: 100%;
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	article, form, #portfolio {
+		width: 60%;
+		float: left;
+		margin-left: 0;
+
+	}
+
+	aside {
+		width: 35%;
+		float: right;
 	}
 
 	h3 {
-		font: 19px;
+		font: 17px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.iconbox {
+		/*width: 20%;*/
+		/*height: 20%;*/
+		/*background-size: 20% 20%;*/
+		margin left: 0;
+		margin-right: 0;
 	}
 
 }
 
 @media screen and (max-width: 768px) {
+
+	#middle {
+		width: 100%;
+		max-width: 960px;
+	}
 
 	header {
 		width: 90%;
