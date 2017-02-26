@@ -1,4 +1,4 @@
-/*border and padding included in elements width and height
+/*allows border and padding to be included in elements' width and height
 so doesn't change when add border/padding*/
 * {
 	box-sizing: border-box; 
@@ -35,7 +35,6 @@ nav > a {
 
 a:hover {
 	color: #aa4a7d;
-	font-weight: bold;
 }
 
 h1 {
@@ -296,7 +295,7 @@ aside {
 	width: 270px;
 	background-color: #ffffff;
 	border: solid 1px #dddddd;
-	padding: 10px 30px 30px 40px;
+	padding: 10px 30px 30px 30px;
 }
 
 h3 {
@@ -318,40 +317,50 @@ footer {
 	width: 100%;
 }
 
+/************ MEDIA 980 MEDIA 980 MEDIA 980 MEDIA 980 MEDIA 980 *******************************/
 
 @media screen and (max-width: 980px) {
 
 	header {
 		width: 700px;
-		margin: 0 auto;
 	}
 
 	h1 {
-		color: blue;
 		font: 30px;
 		margin: 0;
+	}
+
+	#middle {
+		max-width: 700px;
+	}
+
+	article, form, #portfolio {
+		width: 60%;
+		margin-left: 0;
 	}
 
 	h2 {
 		font: 28px;
 	}
 
-	#middle {
+	.projects {
 		width: 100%;
-		max-width: 700px;
-		margin: 0 auto;
+		height: 100%;
 	}
 
-	article, form, #portfolio {
-		width: 60%;
-		float: left;
-		margin-left: 0;
-
+	.projects > span {
+		bottom: 10px;
+	}
+	
+	#project2, #project4 {
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	aside {
 		width: 35%;
 		float: right;
+		padding-left: 25px;
 	}
 
 	h3 {
@@ -361,31 +370,22 @@ footer {
 	}
 
 	.iconbox {
-		/*width: 20%;*/
-		/*height: 20%;*/
-		/*background-size: 20% 20%;*/
 		margin left: 0;
 		margin-right: 0;
 	}
 
 }
 
-@media screen and (max-width: 768px) {
+/************ MEDIA 768 MEDIA 768 MEDIA 768 MEDIA 768 MEDIA 768 *******************************/
 
-	#middle {
-		width: 100%;
-		max-width: 960px;
-	}
+@media screen and (max-width: 768px) {
 
 	header {
 		width: 90%;
-		margin: 0 auto;
 	}
 
 	h1 {
-		color: orange;
 		font: 28px;
-		margin: 0;
 	}
 
 	h2 {
@@ -396,10 +396,9 @@ footer {
 		font: 18px;
 	}
 
-	#maria {
-		width: 50%;
-		height: 50%; /*difference between 50% or auto*/
-		margin-bottom: 20px;
+	#middle {
+		width: 100%;
+		max-width: 960px;
 	}
 
 	article, form, #portfolio {
@@ -408,39 +407,47 @@ footer {
 		width: 90%;
 	}
 
+	#maria {
+		width: 50%;
+		height: 50%; 
+		margin-bottom: 20px;
+	}
+
 	.projects {
 		width: 45%;
-		/*height: auto;
-		height: 70%;*/
-		height: 100%;
-		/*padding:0;*/
 	}
 
-	/*#project1, #project2, #project3, #project4, #project5 {
-		width: 45%
-		height: 45%;
-	}*/
-
-	.projects:nth-child (even) {
-		margin: 0;
-		padding: 0;
-		float: left;
+	/*first placeholder*/
+	#project1 {
+		margin: 10px 0 49px 2%;
+	}
+ 
+	#project2 {
+		margin: 10px 0 49px 6%;
 	}
 
-	.projects:nth-child (odd) {
-		float: right;
-		margin: 0;
+	#project3 {
+		margin: 0 0 49px 2%;
+	}
+
+	#project4 {
+		margin: 0 0 49px 6%;
+	}
+
+	#project5 {
+		margin: 0 0 25px 2%;
 	}
 
 	.projects > span {
 		bottom: 10px;
 	}
-
+	
 	aside {
 		margin: 0 auto 25px auto;
 		width: 90%;
 		float: none;
-		overflow: auto; /*why***************/
+		overflow: auto;
+		padding-left: 35px; 
 	}
 
 	/*extends bottom border of h3*/
@@ -451,42 +458,27 @@ footer {
 
 }
 
-
-
+/************ MEDIA 640 MEDIA 640 MEDIA 640 MEDIA 640 MEDIA 640 *******************************/
 
 @media screen and (max-width: 640px) {
 
+	header {
+		position: static;
+		width: 100%;
+	}
+
 	h1 {
-		color: red;
 		width: 100%;
 		text-align: center;
 		height: 50px;
-		position: relative;/*******/
-		display: block;/*******/
-		float:left;/********/
-		left:0;/********/
-		margin: 0;/********/
 		padding-top:10px;
 		font-size: 26px;
-
 	}
-	
-	header {/*had to be header not #top*/
-		position: static;/*********/
-		width: 100%;
-		overflow: auto;/*******/
-		height: auto;/********/
-		margin: 0;/*******/
-	}
-
 
 	#pages {
-		float: left;/***********/
 		width: 100%;
-		display:block;/********/
-		text-align: center;/*******/
+		text-align: center;
 		padding-top:18px;
-		margin:0;/*********/
 		height:50px;
 	}
 
@@ -505,6 +497,11 @@ footer {
 		padding-right: 8px;
 	}
 
+	article, form, #portfolio {
+		margin: 0 auto 25px auto;
+		width: 90%;
+	}
+
 	h2 {
 		font-size: 24px;
 	}
@@ -515,38 +512,33 @@ footer {
 		margin-bottom: 20px;
 	}
 
-	article, form, #portfolio {
-		float: none;
-		margin: 0 auto 25px auto;
-		width: 90%;
-	}
-
-	aside {
-		margin: 0 auto 25px auto;
-		width: 90%;
-		float: none;
-		overflow: auto;
-	}
-
-	/*extends bottom border of h3*/
-	h3 {
-		width: 100%;
-		font-size: 17px;
-	}
-
 	.projects {
 		width: 100%;
 		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.projects > span {
 		bottom: 10px;
 	}
 	
-	/*doesn't work if under projects class*/   /*****************/
-	#project2, #project4 {
+	#project1, #project2, #project3, #project4, #project5 {
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	aside {
+		margin: 0 auto 25px auto;
+		width: 90%;
+		overflow: auto;
+		padding-left: 35px;
+	}
+
+	/*extends bottom border of h3*/
+	h3 {
+		width: 100%;
+		font-size: 17px;
 	}
 
 }

@@ -33,21 +33,16 @@
 			<div class="maincontent" id="formcontent">
 				<label> 
 					Name
-				</label> <!--Only label goes in label; input goes on outside-->
-				<!--autofocus selects the element the browser will focus on when the form is displayed-->
-				<!--required ensures the user provides a value-->
+				</label> 
 				<input required autofocus type="text" name="name" placeholder="John Smith">
 				<label>
-					Email   <!--name attribute used to reference elements in js-->
+					Email   
 				</label>
-				<!--type email ensures the user provides a value with @ -->
 				<input required type="email" name="email" placeholder="example@gmail.com">
 				<label>
 					Message
 				</label>
 				<textarea required name="Message"></textarea>
-				<!--can also use button element but different browsers may submit different values when 
-				button is used in an html form-->
 				<input id="button" type="submit" name="submit" value="Submit">
 			</div>
 		</form>	
