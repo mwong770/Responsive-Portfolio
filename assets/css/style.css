@@ -101,14 +101,13 @@ nav > a {
 #middle {
 	overflow: auto;
 	width: 100%;
-	max-width: 960px;/*why media queries don't work unless this is set to max but others not max*/
+	max-width: 960px;
 	margin: 0 auto;
 }
 
 article, form, #portfolio {
 	float: left;
-	/*width: 100%;/**if make this one width 100% and/or max-width 650 768 stops working***/
-	width: 650px;/****/
+	width: 650px;
 	background-color: #ffffff;
 	margin: 0 20px 40px 20px;
 	border: solid 1px #dddddd;
@@ -189,10 +188,7 @@ label, textarea {
 	position: relative;
 	width: 275px;
 	height: 206px;
-	/*width: 45%;*/  /*percent doesn't account for height ratio*/
-	/*display: inline-block;*/ /***********/
-	/*overflow: auto;*/ /************/
-	}
+}
 
 .projects:hover {
 	opacity: .5;
@@ -221,7 +217,7 @@ label, textarea {
 
 /*all placeholders*/
 .holders {
-	width: 100%;  /*how does it know to fill the height; is there a default setting*/
+	width: 100%; 
 }
 
 /*placeholder text*/
@@ -274,12 +270,10 @@ label, textarea {
 
 #github:hover {
 	background-image: url("../images/inversegithub.png");
-	/*background-size: 52px 52px;*/
 }
 
 #linkedin:hover {
 	background-image: url("../images/inverselinkedin.png");
-	/*background-size: 52px 52px;*/
 }
 
 /*set a different size and position to match the other smaller, centered icons*/
