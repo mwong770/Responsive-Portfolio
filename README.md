@@ -36,7 +36,7 @@ A basic HTML and CSS portfolio made responsive with media queries
 * Users can view a photo of me
 * Users can click on 'Portfolio' to see placeholder project images with project names
 * Users can click on 'Contact' to complete a form with their questions or comments that is emailed to me
-* Users can click on an icon that links to my GitHub, LinkedIn, and StackOverflow pages
+* Users can click on icons that link to my GitHub, LinkedIn, and StackOverflow pages
 * Users can easily view the app on multiple browser sizes
 
 
